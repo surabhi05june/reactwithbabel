@@ -1,0 +1,24 @@
+1) create a public folder in that create index.html 
+2) Goto the folder and install Npm by npm init.
+3) add script tag of react and react dom for manipulation
+4) Create a div element in index.html
+5) create a app.js file inside scripts.js, inside that app.js we will write react code
+6) how to  install babels..
+-> presets have to install which means collection of plugin which support es3 to latest es2018
+ -> babel we need(Different projects on the same machine can depend on different versions of Babel allowing you to update one at a time)
+ so install babel using dev dependency
+ npm:
+ ====
+npm add @babel/core @babel/cli --dev
+7) add presets npm add @babel/preset-env @babel/preset-react --dev
+8) now create a src folder with app.js and in this file 
+we have to cut paste the content ofscripts/app.js 
+9) in .babelrc we will configure preset 
+10) when we build our project then automaticaaly converted code store in scripts/app.js
+11) for build purpose we have to write build scripts inside package.json
+"build":"babel src/App.js --out-file public/scripts/App.js --watch" 
+babel then source file "--out-file" to compile the src file into target location
+--watch:- if you want to see the change at a time instead of building all time.
+12) to run the code npm run build 
+
+
